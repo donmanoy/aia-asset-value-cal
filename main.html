@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+   	<link rel="stylesheet" href="css/ui-lightness_custom/jquery-ui-1.8.21.custom.css" charset="utf-8">
+   	<link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="customJs/jquery-1.7.2.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="customJs/jquery-ui-1.8.21.custom.min.js" charset="utf-8"></script>
+	<!-- support touch on mobile/tablet device -->
+	<script type="text/javascript" src="customJs/jquery.ui.touch-punch.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="customJs/svg_graph.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="customJs/education_calculation.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="customJs/education_general.min.js" charset="utf-8"></script>
+</head>
+<body>
+
+    <div id="front">
+    
+    	<div id="top" class="white">
+    		<span class="size22 bold">Your Human Asset Value</span>
+    		<br/>
+    		<span class="size17 red">Plan for their head-start in life</span>
+    	</div>
+		
+        
+
+    	<div id="middle">
+        
+    		<div id="left">
+    
+    <div class="divCover"></div>
+     <div id="setting_boxMessage" class="size21 lightBlack bold">Project your cumulative lifetime earnings by keying inputs here.</div>
+     
+    			<div id="left_bot">
+    				<table id="question" class="size17 lightBlack">
+    					<tr> 
+    						<td width="150"><strong>Age:</strong></td><td id="expected_cost"><div class="input right question_input_box size16 bold lightBlack">0</div></td>
+    					</tr>
+    					<tr>
+    						<td><strong>Monthly Income:</strong></td><td id="current_saving"><div class="input right question_input_box size16 bold lightBlack">0</div></td>
+    					</tr>
+    					
+    				</table>
+                    
+                    <div id="bottom"><button id="calculate_btn" class="size15 white bold">Calculate</button></div>
+                </div>
+                
+                    <div class="divCalc">
+                
+    			</div>
+                
+              <div id="yAxisName" class="size22 bold red">
+                <p>Cumulative <br>Lifetime<br> 
+                Earnings* ($)</p>
+                </div>
+                
+                <div id="mylegend" class="black size13">*Assumes a 5% pay <br>rise every year until <br>retirement at age 65.</div>
+                
+                <div id="forRecal"><button id="recalculate" class="size15 white bold">Recalculate</button></div>
+                
+                <div id="moreInfo">
+                <br>
+                <a id="important_notes" class="bold lightBlack size14" href="#">&gt;&gt; Click here for important notes</a>
+                </div>
+                
+                <div id="xAxisName" class="size22 bold red">
+                <p>Your Age</p>
+                </div>
+                
+    		</div>
+            
+            <div id="myRight">
+            <div id="maxValueGraph" class="size21 bold red"></div>
+    			<div id="right_bot">
+				<div id="svg_frame">
+					<svg id="graph" xmlns="http://www.w3.org/2000/svg" version="1.1" >
+						<g class="axis"></g>
+						<g class="data"></g>
+						<g class="dataLine"></g>
+					</svg>
+				</div>
+    			</div>
+    		</div>
+			
+			<div id="keypad" class="white bold">
+				<table>
+					<tr>
+						<td class="btn">1</td>
+						<td class="btn">2</td>
+						<td class="btn">3</td>
+					</tr>
+					<tr>
+						<td class="btn">4</td>
+						<td class="btn">5</td>
+						<td class="btn">6</td>
+					</tr>
+					<tr>
+						<td class="btn">7</td>
+						<td class="btn">8</td>
+						<td class="btn">9</td>
+					</tr>
+					<tr>
+						<td class="btn">0</td>
+						<td class="btn">00</td>
+						<td class="btn"><img src="images/backspace_btn.png" style="margin-top:9px"/></td>
+					</tr>
+				</table>
+			</div>
+			<div id="keypad_pointer"></div>
+            
+            <div id="more_info" class="help_box">
+			<div class="content">
+				<div class="close_btn"></div>
+				<p class="red size14 bold">More Information</p>
+				<p class="size14 desc">A 34-year-old man earning S$4,500 per month, with an average <br>pay rise of 5% per year, will earn close to S$4m+ until he retires <br>at age 65.</p>
+                <p class="size14 desc">+ S$4,655 monthly nominal earnings per employee (all-industry average) in Q4 2011. Source: Singapore Department of Statistics, Monthly Digest of Statistics February 2012.</p>
+			</div>
+		</div>
+        
+        <div id="quick_help5" class="help_box">
+			<div class="content">
+				<div class="close_btn"></div>
+				<p class="red size14 bold">Important Notes</p>
+				<p class="size13 desc">The information presented is for your information only and does not have regard to the specific investment objectives, financial situation and particular needs of any persons.</p>
+				<p class="size13 desc">These financial tools are designed for assisting in financial planning and are for general reference only. The information and analysis provided by these tools are based on various assumptions, which are subject to change at any time without notice.</p>
+				<p class="size13 desc">No AIA entity, employee or agent gives any representation or warranty as to the accuracy or usefulness of any information provided by these tools, nor do they accept any liability for any loss arising from any use of or reliance upon these tools.</p>
+				<p class="size13 desc">Nothing generated by these tools constitutes professional advice. You are advised to seek financial advice tailored to your own specific objectives, financial situation and particular needs before making any decisions regarding your retirement planning or your investments. Should you have any questions regarding planning for your retirement or the management of your investments, please consult your AIA Financial Services Consultant.</p>
+				<p class="size13 desc">The information presented is correct as at August 2012.</p>
+			</div>
+		</div>
+            
+		</div>
+        
+        <div id="dollarSign" class="size22 bold red">$
+                </div>
+        
+	</div>
+   
+</body>
+</html>
